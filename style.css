@@ -1,0 +1,158 @@
+:root{
+    --color-primary:#f9d72f;
+    --color-background:#e6e6e6;
+    --color-task:#f7f7f7;
+    --color-success:#36d39a;
+    --color-warning:#fbbf23;
+    --color-error:#f87171;
+}
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.todo{
+    
+    width:100%;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:40px auto 10px;
+    background-color: #fefefe;
+    box-shadow:0 8px 32px 0 rgba(31,38,153,0.3);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.18);
+ 
+}
+
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.input-box{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+input{
+    width:100%;
+    padding:5px;
+    margin-right: 10px;
+    color: grey;
+    border-radius: 10px;
+    border: var(--color-primary) 1px solid;
+    
+}
+input:focus{
+    outline: none;
+    border-width: 2px;
+
+}
+
+button{
+    padding:10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+
+
+}
+#edit-button{
+    display: none;
+}
+
+
+button:hover{
+    opacity: 0.8;
+}
+
+#delete-all-button{
+
+    background-color: var(--color-error);
+}
+
+.operators{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+table{
+    width:100%;
+}
+thead th{
+    padding:10px;
+    background-color: var(--color-background);
+}
+tbody td{
+    text-align: center;
+    padding: 5px;
+    width: 25%;
+
+
+}
+tbody td button{
+    padding:2px 5px;
+    background-color: var(--color-warning);
+    margin: 5px;
+   
+
+
+}
+tbody td button:nth-child(2){
+    width:48px;
+    background-color: var(--color-success);
+
+}
+tbody td button:nth-child(3){
+   
+    background-color: var(--color-error);
+
+}
+
+
+
+#alert-messege{
+
+    display: flex;
+    align-items: center;
+   
+    width:100%;
+    height: 30px;
+    margin: 10px  0 10px 0;
+}
+
+
+.alert{
+    display:block;
+    width:100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+   
+    
+
+}
+.alert-success{
+    background-color: var(--color-success);
+
+}
+.alert-error{
+    background-color: var(--color-error);
+
+}
+ 
+
+
